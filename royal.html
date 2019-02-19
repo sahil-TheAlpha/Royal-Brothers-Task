@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--Meta Tags -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<!-- jQueryUI -->
+	<link rel="stylesheet" type="text/css" href="CSS/jquery-ui.min.css">
+	<!-- Material Design Bootsrap -->
+	<link rel="stylesheet" type="text/css" href="CSS/mdb.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+	<title>WEB PAGE</title>
+
+</head>
+<body>
+	<!--Start of Section One -->
+	<section class="header">
+		<span><a href="#">Refer friends</a> <i class="fas fa-phone"></i> +91-9019595595 / +91-7306747474</span>
+	</section>
+	<!--End of Section One -->
+
+	<!-- Start of Section Two -->
+	<section class="main">
+		<nav class="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-logo">
+						<img src="Images/logo.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="bikes">
+					<a href="#" class="bikeRider" id="bikeRider" data-toggle="modal" data-target="#selectCity">Select a City</a>
+				</div>
+				<div class="navbar-items">
+					<ul class="nav navbarNav list-items">
+						<li class="nav-item">
+							<a href="#" class="nav-link offers">Offers</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link tariff">Tariff</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link search">Search</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link menu" data-toggle="dropdown" id="dropdownMenu" aria-expanded="false">Menu</a>
+							<div class="dropdown-menu" aria-labelledBy="dropdownMenu">
+								<div class="dropdown-item">
+									<a href="#" class="item">Blog</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">Rides</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">Bike Tour</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">FAQ</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">Privacy Policy</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">Terms & Conditions</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">Partner with us</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">Reach Us</a>
+								</div>
+								<div class="dropdown-item">
+									<a href="#" class="item">About us</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link">
+								<a href="#" class="sign">Sign up</a> <a href="#">Login</a>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="sideNavigation">
+					<a href="#" class="sideNavigationLink" onclick="openSideMenu()">
+						<i class="fas fa-bars sideMenuIcon"></i>
+					</a>
+				</div>
+				<div class="sideMenu" id="sideMenu">
+					<a href="#" class="sideMenuClose" onclick="closeSideMenu()">&times;</a>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<a href="#">Home</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">Offers</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">Tariff</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">Bike Tour</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">Rides</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">Sign up</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#">Log in</a>
+						</li>
+						<li class="list-group-item dropdown">
+							<a href="#" class="dropdownLink" data-toggle="dropdown" id="dropdown" aria-expanded="false">More</a>
+							<div class="dropdown-menu" aria-labelledBy="dropdown">
+								<div class="dropdown-item">
+									<a href="#">Blog</a>
+								</div>
+								<hr>
+								<div class="dropdown-item">
+									<a href="#">FAQ</a>
+								</div>
+								<hr>
+								<div class="dropdown-item">
+									<a href="#">Privacy policy</a>
+								</div>
+								<hr>
+								<div class="dropdown-item">
+									<a href="#">Terms & Conditions</a>
+								</div>
+								<hr>
+								<div class="dropdown-item">
+									<a href="#">Partner with us</a>
+								</div>
+								<hr>
+								<div class="dropdown-item">
+									<a href="#">Reach us</a>
+								</div>
+								<hr>
+								<div class="dropdown-item">
+									<a href="#">About us</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container" id="contentContainer">
+			<div class="content">
+				<ul class="multipleOptions">
+					<li class="options">
+						<a href="#" class="active">Search</a>
+					</li>
+					<li class="options">
+						<a href="#" class="optionTwo">Intercity</a>
+					</li>
+				</ul>
+				<form class="form-row">
+					<div class="col">
+						<div class="form-group">
+							<input type="text" name="pickup" id="pickup" placeholder="Pickup Date">
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<input type="text" name="pickup" id="pickupTime" placeholder="Pickup Time">
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<input type="text" name="pickup" id="drop" placeholder="Dropoff Date">
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<input type="text" name="pickup" id="dropTime" placeholder="Drop Time">
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<input type="button" class="" value="Search" name="searchBtn" id="searchBtn">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- End of Section Two -->
+
+	<!-- Start of Section three -->
+	<section class="statistics">
+		<div class="container">
+			<div class="box boxOne">
+				<h4>40 +</h4>
+				<h6>Cities</h6>
+			</div>
+			<div class="box boxTwo">
+				<h4>5 M</h4>
+				<h6>Kilometers</h6>
+			</div>
+			<div class="box boxThree">
+				<h4>4.6</h4>
+				<h6>Facebook</h6>
+			</div>
+			<div class="box boxFour">
+				<h4>4.5</h4>
+				<h6>Google</h6>
+			</div>
+		</div>
+	</section>
+	<!-- End of Section three -->
+
+	<!-- Start of Section Four -->
+	<section class="features">
+		<div class="container">
+			<h4 class="speciality">Our Speciality</h4>
+			<div class="row">
+				<div class="feature featureOne">
+					<h5>First Authorized bike rental</h5>
+					<p>Pioneers in renting out bikes legally in Karnataka.</p>
+				</div>
+				<div class="feature featureTwo">
+					<h5>Bikes in top notch conditions</h5>
+					<p>Each bike is cleaned and serviced weekly and also once before renting out.</p>
+				</div>
+				<div class="feature featureThree">
+					<h5>Timely pick up and drop off</h5>
+					<p>If we delay even by 15 mins, ₹ 25 on scooter and ₹50 on bikes will be refunded.</p>
+				</div>
+				<div class="feature featureFour">
+					<h5>Home delivery on weekdays*</h5>
+					<p>Now avail our service and get the key to happiness at your doorstep.</p>
+				</div>
+				<div class="feature featureFive">
+					<h5>Commercial Insurance is covered</h5>
+					<p>We have a valid commercial insurance for the rider, pillion and third party.</p>
+				</div>
+				<div class="feature featureSix">
+					<h5>Most trusted & transparent process</h5>
+					<p>We are upfront about the entire process of renting a bike from us.</p>
+				</div>
+				<div class="feature featureSeven">
+					<h5>19 pickup locations in Bangalore</h5>
+					<p>There are good chances you will find us in 3 km radius from your location.</p>
+				</div>
+				<div class="feature featureEight">
+					<h5>Choose from a wide variety of bikes</h5>
+					<p>Pick a bike that suits your need from scooters to superbikes.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Section Four -->
+
+	<!-- Start of Section Five -->
+	<section class="fleet">
+		<h4 class="heading">Our Fleet</h4>
+		<div class="container">
+			<div class="pictures">
+				<div class="picture pictureOne">
+					<h6 class="name">Triumph Street Twin</h6>
+					<a href="#">
+						<img src="Images/bike_one.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureTwo">
+					<h6 class="name">Benelli TNT 600 i</h6>
+					<a href="#">
+						<img src="Images/bike_two.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureThree">
+					<h6 class="name">Harley Davidson Iron 883</h6>
+					<a href="#">
+						<img src="Images/bike_three.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureFour">
+					<h6 class="name">Classic 350</h6>
+					<a href="#">
+						<img src="Images/bike_four.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureFive">
+					<h6 class="name">Himalayan</h6>
+					<a href="#">
+						<img src="Images/bike_five.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureSix">
+					<h6 class="name">Dominar 400</h6>
+					<a href="#">
+						<img src="Images/bike_six.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureSeven">
+					<h6 class="name">Avenger Cruise 220</h6>
+					<a href="#">
+						<img src="Images/bike_seven.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureEight">
+					<h6 class="name">Activa</h6>
+					<a href="#">
+						<img src="Images/bike_eight.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureNine">
+					<h6 class="name">Classic 350</h6>
+					<a href="#">
+						<img src="Images/bike_nine.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureTen">
+					<h6 class="name">Yamaha FZ</h6>
+					<a href="#">
+						<img src="Images/bike_ten.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureEleven">
+					<h6 class="name">Duke 200</h6>
+					<a href="#">
+						<img src="Images/bike_eleven.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="picture pictureTwelve">
+					<a href="#" class="show">Show More</a>
+				</div>
+			</div>
+			<div class="companies">
+				<div class="company companyOne">
+					<a href="#">
+						<img src="Images/your_story.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="company companyTwo">
+					<a href="#">
+						<img src="Images/times_india.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="company companyThree">
+					<a href="#">
+						<img src="Images/economic_times.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="company companyFour">
+					<a href="#">
+						<img src="Images/hindu.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Section Five -->
+
+	<!-- Start of Footer Section -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4">
+					<a href="#" class="brand_image">
+						<img src="Images/logo.png" class="img-responsive img-fluid">
+					</a>
+				</div>
+				<div class="col-xl-4">
+					<h2 class="company">Company</h2>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Tariff</a></li>
+						<li><a href="#">Partner with us</a></li>
+						<li><a href="#">Reach us</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-4">
+					<h2 class="company">Follow</h2>
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Linkedin</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p class="small">Copyright 2019 Royalbison AutoRentals India Private Ltd. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End of Footer Section -->
+
+	<!-- Start of Modal -->
+	<div class="modal fade" id="selectCity" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop='static' data-keyboard='false'>
+  		<div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-body">
+		      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          		<span aria-hidden="true">&times;</span>
+		        	</button>
+			        <form>
+			        	<input type="text" id="cities" list="cityNames" class="form-control" placeholder="Start typing to select a city" />
+						<datalist id="cityNames">
+							<option>Agra</option>
+							<option >Ahemdabad</option>
+							<option>Allepey</option>
+							<option>Andaman</option>
+							<option>Bangalore</option>
+							<option>Bangkok</option>
+							<option>Bhuj</option>
+							<option>Chandigarh</option>
+							<option>Chennai</option>
+							<option>Chikmagaluru</option>
+							<option>Cochin</option>
+							<option>Coimbatore</option>
+							<option>Coorg</option>
+							<option>Madikeri</option>
+							<option>Delhi</option>
+							<option>Dharamshala</option>
+							<option>Gandhinagar</option>
+							<option>Ganpatipule</option>
+							<option>Goa</option>
+							<option>Gurugram</option>
+							<option>Mumbai</option>
+							<option>Pune</option>
+							<option>Srinagar</option>
+							<option>Vizag</option>
+						</datalist>
+			        </form>
+			        <div class="cityContainer">
+			        	<a href="#" class="city cityOne" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName img-responsive img-fluid" src="Images/agra.png" /><br>
+			        		</div>
+			        		<p>Agra</p>
+			        	</a>
+			        	<a href="#" class="city cityTwo" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/ahmedabad.png" /><br>
+			        		</div>
+			        		<p>Ahmedabad</p>
+			        	</a>
+			        	<a href="#" class="city cityThree" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/alleppey.png" /><br>
+			        		</div>
+			        		<p>Alleppey</p>
+			        	</a>
+			        	<a href="#" class="city cityFour" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/andaman.png" /><br>
+			        		</div>
+			        		<p>Andaman</p>
+			        	</a>
+			        	<a href="#" class="city cityFive" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/bangalore.png" /><br>
+			        		</div>
+			        		<p>Bangalore</p>
+			        	</a>
+			        	<a href="#" class="city citySix" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/bangkok.png" /><br>
+			        		</div>
+			        		<p>Bangkok</p>
+			        	</a>
+			        	<a href="#" class="city citySeven" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/bhuj.png" /><br>
+			        		</div>
+			        		<p>Bhuj</p>
+			        	</a>
+			        	<a href="#" class="city cityEight" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/chandigarh.png" /><br>
+			        		</div>
+			        		<p>Chandigarh</p>
+			        	</a>
+			        	<a href="#" class="city cityNine" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/chennai.png" /><br>
+			        		</div>
+			        		<p>Chennai</p>
+			        	</a>
+			        	<a href="#" class="city cityTen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/chikmagaluru.png" /><br>
+			        		</div>
+			        		<p>Chikmagaluru</p>
+			        	</a>
+			        	<a href="#" class="city cityEleven" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/cochin.png" /><br>
+			        		</div>
+			        		<p>Cochin</p>
+			        	</a>
+			        	<a href="#" class="city cityTwelve" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/coimbatore.png" /><br>
+			        		</div>
+			        		<p>Coimbatore</p>
+			        	</a>
+			        	<a href="#" class="city cityThirteen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/coorg_madikeri.png" /><br>
+			        		</div>
+			        		<p>Madikeri</p>
+			        	</a>
+			        	<a href="#" class="city cityFourteen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/delhi.png" /><br>
+			        		</div>
+			        		<p>Delhi</p>
+			        	</a>
+			        	<a href="#" class="city cityFifteen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/dharamshala.png" /><br>
+			        		</div>
+			        		<p>Dharamshala</p>
+			        	</a>
+			        	<a href="#" class="city citySixteen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/gandhinagar.png" /><br>
+			        		</div>
+			        		<p>Gandhinagar</p>
+			        	</a>
+			        	<a href="#" class="city citySeventeen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/ganpati_pule.png" /><br>
+			        		</div>
+			        		<p>Ganpati pule</p>
+			        	</a>
+			        	<a href="#" class="city cityEighteen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/goa.png" /><br>
+			        		</div>
+			        		<p>Goa</p>
+			        	</a>
+			        	<a href="#" class="city cityNineteen" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/gurugram.png" /><br>
+			        		</div>
+			        		<p>Gurugram</p>
+			        	</a>
+			        	<a href="#" class="city cityTwenty" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/mumbai.png" /><br>
+			        		</div>
+			        		<p>Mumbai</p>
+			        	</a>
+			        	<a href="#" class="city cityTwentyOne" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/pune.png" /><br>
+			        		</div>
+			        		<p>Pune</p>
+			        	</a>
+			        	<a href="#" class="city cityTwentyTwo" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/srinagar.png" /><br>
+			        		</div>
+			        		<p>Srinagar</p>
+			        	</a>
+			        	<a href="#" class="city cityTwentyThree" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/vizag.png" /><br>
+			        		</div>
+			        		<p>Vizag</p>
+			        	</a>
+			        	<a href="#" class="city cityTwentyFour" data-dismiss="modal">
+			        		<div class="imgCenter">
+			        			<img class="cityName" src="Images/coorg.png" /><br>
+			        		</div>
+			        		<p>Coorg</p>
+			        	</a>
+			        </div>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<h4>Select a city to continue</h4>
+		      	</div>
+		    </div>
+  		</div>
+	</div>
+	<!-- End of Modal -->
+	
+	<!-- jQuery -->
+	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="JS/main.js"></script>
+	<!-- jQueryUI -->
+	<script type="text/javascript" src="JS/jquery-ui.min.js"></script>
+	<!-- Popper JS -->
+	<script type="text/javascript" src="JS/popper.min.js"></script>
+	<!-- Core Bootstrap -->
+	<script type="text/javascript" src="JS/bootstrap.min.js"></script>
+	<!-- Material Design JS -->
+	<script type="text/javascript" src="JS/mdb.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,2172 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	counter-reset: my-sec-counter;
+}
+
+/* Start of Header Section */
+.header{
+	background-color: black;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-right: 20px;
+	opacity: 0.7;
+}
+.header span{
+	color: white;
+	font-size: 15px;
+}
+.header span a{
+	color: white;
+}
+
+/* Start of Main Section */
+.main{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?cs=srgb&dl=architecture-auto-automobiles-210182.jpg&fm=jpg);
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.main .navbar{
+	position: absolute;
+	top: 0px;
+	background-color: rgba(28,28,29, 0.8);
+	width: 100%;
+}
+.main .navbar .navbar-header .navbar-logo img.img-responsive{
+	max-width: 120px;
+	max-height: 120px;
+	object-fit: cover;
+	margin-right: 5rem;
+}
+.main .navbar .bikes{
+	margin-right: auto;
+	/*position: absolute;
+	left: 10%;*/
+	width: auto;
+}
+.main .navbar .bikes .bikeRider{
+	position: relative;
+	color: white;
+}
+.main .navbar .bikes .bikeRider::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 5px;
+}
+.main .navbar .navbar-items ul.navbarNav li.nav-item{
+	padding-right: 50px;
+}
+.main .navbar .navbar-items ul.navbarNav li.nav-item a{
+	color: white;
+}
+.main .navbar .navbar-items ul.navbarNav li.nav-item a.search{
+	position: relative;
+}
+.main .navbar .navbar-items ul.navbarNav li.nav-item a.search::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f002";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;	
+}
+.main .navbar .navbar-items ul.navbarNav li.dropdown a.menu{
+	position: relative;
+}
+.main .navbar .navbar-items ul.navbarNav li.dropdown a.menu::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;	
+}
+.main .navbar .navbar-items ul.navbarNav li.dropdown .dropdown-menu{
+	background-color: rgba(28,28,29, 0.5);
+}
+.main .navbar .navbar-items ul.navbarNav li.dropdown a.item{
+	color: white!important;
+}
+.main .navbar .navbar-items ul.navbarNav li.dropdown .dropdown-menu .dropdown-item:hover{
+	background-color: transparent;
+}
+.main .navbar .navbar-items ul.navbarNav li.nav-item span{
+	border:1px solid white;
+}
+.main .navbar .navbar-items ul.navbarNav li.nav-item span a.sign{
+	position: relative;
+	margin-right: 5px;
+}
+.main .navbar .navbar-items ul.navbarNav li.nav-item span a.sign::after{
+	position: absolute;
+	content: "|";
+	color: white;
+	padding-left: 2px;
+}
+.sideNavigation{
+	display: none;
+}
+.sideMenu{
+	display: none;
+}
+.main .container{
+	top: 65%;
+	position: relative;
+}
+.main .container .content{
+	padding-top: 20px;
+	background-color: rgba(28,28,29, 0.7);
+}
+.main .container ul.multipleOptions{
+	list-style: none;
+	margin-bottom: 50px;
+}
+.main .container ul.multipleOptions li.options{
+	display: inline-block;
+	padding-left: 25px;
+}
+.main .container ul.multipleOptions li.options a{
+	color: #aaa;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+.main .container ul.multipleOptions li.options a.active{
+	position: relative;
+	color: white;
+}
+.main .container ul.multipleOptions li.options a.active::after{
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 3px;
+	background-color: rgba(251, 197, 49,1.0);
+}
+.main .container form.form-row{
+	transform: translateX(25px);
+}
+.main .container form.form-row .col .form-group input[type="text"]{
+	background-color: transparent;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 15px;
+	color: white;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: 1px solid #757575; 
+}
+.main .container form.form-row .col .form-group input[type="text"]:focus{
+	outline:none;
+	z-index: 900;
+}
+.main .container form.form-row .col .form-group input:focus::placeholder{
+	visibility: hidden;
+}
+.main .container inputForm.customForm{
+	display: none;
+}
+.main .container form.form-row .col .form-group input[type="button"]{
+	background-color: rgba(251, 197, 49,1.0);
+	padding: 5px 20px;
+	color: white;
+	text-transform: uppercase;
+	border:none;
+	cursor: pointer;
+}
+.main .container .inputForm{
+	display: none;
+}
+
+/* Start of Statistics Section */
+.statistics{
+	background: linear-gradient(rgba(245, 246, 250,0.4),rgba(245, 246, 250,0.4)),url(https://i.pinimg.com/564x/12/01/eb/1201eb3119aaaaf434198e03b29ca581.jpg);
+}
+.statistics .container{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.statistics .container .box{
+	display: inline-block;
+	width: 24%;
+	background-color: rgba(220, 221, 225,0.6);
+	margin-right: 7px;
+	z-index: 500;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.statistics .container .boxThree h4{
+	position: relative;
+}
+.statistics .container .boxThree h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .boxFour h4{
+	position: relative;
+}
+.statistics .container .boxFour h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .box h4{
+	z-index: 100;
+	font-weight: 800;
+}
+.statistics .container .box h6{
+	z-index: 100;
+	text-transform: uppercase;
+	font-weight: 600; 
+}
+
+/* Start of Features Section */
+.features{
+	background-color: #FFFFFF;
+}
+.features .container{
+	padding-top: 20px;
+	padding-bottom: 60px;
+	width: 100%;
+}
+.features h4.speciality{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 3.5rem;
+}
+.features .container .feature{
+	margin-bottom: 30px;
+	width: 24%;
+	margin-right: 10px;
+}
+.features .container .feature h5{
+	position: relative;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-left: 50px;
+	font-size: 20px;
+}
+.features .container .feature h5::before{
+	position: absolute;
+	counter-increment: my-sec-counter;
+	content: counter(my-sec-counter);
+	transform: translateX(-50px);
+	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	color: rgba(251, 197, 49,1.0);
+}
+.features .container .feature p{
+	color: #aaa;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-right: 15px;
+	/*line-height: 1.3rem;
+	letter-spacing: 1px;
+	word-spacing: 1px;*/
+}
+
+/* Start of Fleet Section */
+.fleet{
+	background-color: #EEEEEE;
+}
+.fleet .container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.fleet h4.heading{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	padding-top: 30px;
+}
+.fleet .container .pictures{
+	background-color: white;
+	margin-bottom: 2.5rem;
+	box-shadow: 0px 0px 10px 0px black;
+	/*display: flex-wrap;*/
+	/*justify-content: space-between;*/
+}
+.fleet .container .pictures .picture h6.name{
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.fleet .container .pictures .picture{
+	/*position: absolute;*/
+	width: 24%;
+	display: inline-block;
+}
+.fleet .container .pictures .pictureTwelve a.show{
+	position: relative;
+	color: #aaa;
+	left: 40%;
+	font-weight: 700;
+}
+.fleet .container .pictures .pictureTwelve a.show::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;
+}
+.fleet .container .companies .company{
+	display: inline-block;
+	width: 24%;
+	padding-left: 30px;
+}
+
+/* Start of Footer Section */
+.footer{
+	padding-top: 40px;
+	padding-bottom: 1px;
+	background-color: #363636;
+}
+.footer .container .col-xl-4 a.brand_image .img-responsive{
+	max-width: 200px;
+	max-height: 200px;
+	object-fit: cover;
+}
+.footer .container .row .col-xl-4 h2.company{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+.footer .container .row .col-xl-4 ul{
+	list-style: none;
+}
+.footer .container .row .col-xl-4 ul li{
+	display: block;
+}
+.footer .container .row .col-xl-4 ul li a{
+	font-size: 12px;
+	color: white;
+}
+.footer .container .footer-copyright{
+	margin-top: 20px;
+}
+.footer .container .footer-copyright p{
+	text-align: center;
+	color: white;
+	position: relative;
+}
+.footer .container .footer-copyright p::before{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f1f9";
+	font-weight: 400;
+	font-style: normal;
+  	font-variant: normal;
+  	left: 29%;
+}
+
+/* Start of Modal */
+.cityContainer{
+	max-height: 350px;
+	overflow-y: scroll;
+	padding-top: 50px;
+	padding-left: 50px;
+	z-index: 100;
+}
+.cityContainer .city{
+	width: 150px;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	padding-top: 10px;
+}
+.cityContainer .city .imgCenter{
+	text-align: center;
+}
+.cityContainer .city img{
+	max-width: 70px;
+	max-height: 70px;
+	object-fit: cover;
+}
+.cityContainer .city img:hover{
+	border:2px solid yellow;
+	border-radius: 50%;
+}
+.cityContainer .city p{
+	color: #aaa;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.modal .modal-footer{
+	display: flex;
+	justify-content: center;
+	background-color: #aaa
+}
+.modal .modal-footer h4{
+	color: white;
+	text-transform: uppercase;	
+}
+.modal-body button.close{
+	margin-bottom: 20px;
+}
+.modal-body button.close span{
+	border-radius: 50%;
+	border:2px solid #aaa;
+	padding: 0px 5px;
+}
+.modal-body button.close:focus{
+	outline: none;
+}
+.modal-body button.close span:hover{
+	border-color: black;
+}
+
+/* Media Queries */
+@media screen and (min-width: 567px) and (max-width: 767px){
+/* Start of Header Section */
+.header{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	opacity: 0.7;
+}
+.header span{
+	color: white;
+	font-size: 15px;
+}
+.header span a{
+	color: white;
+}
+
+/* Main Section */
+.main{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?cs=srgb&dl=architecture-auto-automobiles-210182.jpg&fm=jpg);
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.main .navbar .navbar-header .navbar-logo img.img-responsive{
+	max-width: 120px;
+	max-height: 120px;
+	object-fit: cover;
+	margin-right: 1.6rem;
+}
+.main .navbar .navbar-items{
+	display: none;
+}
+.main .container .content{
+	display: none;
+}
+.main .container{
+	top: 70%;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.main .container inputForm.customForm{
+	background-color: rgba(28,28,29, 1.0);
+}
+.main .container inputForm.customForm ul li.listItems{
+	width: 50%;
+	display: inline-block;
+}
+.main .container inputForm.customForm ul li.active a{
+	color: white!important;
+} 
+.main .container inputForm.customForm ul li.listItems a{
+	color: #aaa;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.main .container inputForm.customForm input[type="text"]{
+	text-transform: uppercase;
+}
+.sideMenu{
+	height:100%;
+	width:0px;
+	position:fixed;
+	z-index:600;
+	top:0px;
+	right:0px;
+	background-color:white;
+	overflow-x:hidden;
+	padding-top:45px;
+	transition:0.4s ease;
+	display: block;
+}  
+.sideMenu a{
+	/*padding:20px 10px 10px 30px;*/
+	font-size:15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+	/*transition:0.3s;*/
+}  
+.sideMenu .sideMenuClose{
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:36px;
+}
+.sideNavigation{
+	display: block;
+}
+.sideNavigation a i{
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+}
+.sideMenu .dropdown{
+	position: relative;
+}
+.sideMenu .dropdown::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 250px;
+}
+.dropdown-menu{
+	border:none;
+	width: 100%;
+}
+.dropdown-menu .dropdown-item{
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+}
+.dropdown-menu hr{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*Statistics Section */
+.statistics{
+	background: linear-gradient(rgba(245, 246, 250,0.4),rgba(245, 246, 250,0.4)),url(https://i.pinimg.com/564x/12/01/eb/1201eb3119aaaaf434198e03b29ca581.jpg);
+}
+.statistics .container{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left:40px;
+}
+.statistics .container .box{
+	display: inline-block;
+	width: 48%;
+	background-color: rgba(220, 221, 225,0.4);
+	z-index: 500; 
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.statistics .container .boxThree h4{
+	position: relative
+}
+.statistics .container .boxThree h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .boxFour h4{
+	position: relative;
+}
+.statistics .container .boxFour h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .box h4{
+	z-index: 100;
+	font-weight: 800;
+	font-size: 30px;
+}
+.statistics .container .box h6{
+	z-index: 100;
+	text-transform: uppercase;
+	font-weight: 650;
+	font-size: 18px; 
+}
+
+/* Features Section */
+.features{
+	background-color: #FFFFFF;
+}
+.features .container{
+	padding-top: 20px;
+	padding-bottom: 60px;
+	padding-left: 35px;
+}
+.features h4.speciality{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 3.5rem;
+}
+.features .container .feature{
+	margin-bottom: 10px;
+	width: 48%;
+	margin-right: 10px;
+}
+.features .container .feature h5{
+	position: relative;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-left: 50px;
+	font-size: 20px;
+}
+.features .container .feature h5::before{
+	position: absolute;
+	counter-increment: my-sec-counter;
+	content: counter(my-sec-counter);
+	transform: translateX(-40px);
+	font-size: 50px;
+	line-height: 40px;
+	font-weight: 800;
+	color: rgba(251, 197, 49,1.0);
+}
+.features .container .feature p{
+	color: #aaa;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-right: 15px;
+	/*line-height: 1.3rem;
+	letter-spacing: 1px;
+	word-spacing: 1px;*/
+}
+
+/* Start of Fleet Section */
+.fleet{
+	background-color: #EEEEEE;
+}
+.fleet .container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.fleet h4.heading{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	padding-top: 30px;
+}
+.fleet .container .pictures{
+	background-color: white;
+	margin-bottom: 2.5rem;
+	box-shadow: 0px 0px 10px 0px black;
+	/*display: flex-wrap;*/
+	/*justify-content: space-between;*/
+}
+.fleet .container .pictures .picture h6.name{
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 700;
+	font-size: 30px;
+}
+.fleet .container .pictures .picture{
+	/*position: absolute;*/
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.fleet .container .pictures .picture a img{
+	/*transform: translateX(50%);*/
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	margin-top: 0px;
+}
+.fleet .container .pictures .pictureTwelve a.show{
+	position: relative;
+	color: #aaa;
+	left: 40%;
+	font-weight: 700;
+	font-size: 20px;
+	padding-top: 30px;
+	font-weight: 700;
+}
+.fleet .container .pictures .pictureTwelve a.show::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;
+}
+.fleet .container .companies .company{
+	display: inline-block;
+	width: 48%;
+	padding-left: 0px;
+}
+/* Start of Footer Section */
+.footer{
+	padding-top: 40px;
+	padding-bottom: 1px;
+	background-color: #363636;
+}
+.footer .container .row .col-xl-4{
+	margin-bottom: 20px;
+}
+.footer .container .col-xl-4 a.brand_image .img-responsive{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.footer .container .row .col-xl-4 h2.company{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+.footer .container .row .col-xl-4 ul{
+	list-style: none;
+}
+.footer .container .row .col-xl-4 ul li{
+	display: block;
+}
+.footer .container .row .col-xl-4 ul li a{
+	font-size: 12px;
+	color: white;
+}
+.footer .container .footer-copyright{
+	margin-top: 20px;
+}
+.footer .container .footer-copyright p{
+	text-align: center;
+	color: white;
+	position: relative;
+}
+.footer .container .footer-copyright p::before{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f1f9";
+	font-weight: 400;
+	font-style: normal;
+  	font-variant: normal;
+  	left: 6%;
+}
+}
+
+@media screen and (min-width: 400px) and (max-width: 566px){
+/* Start of Header Section */
+.header{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	opacity: 0.7;
+}
+.header span{
+	color: white;
+	font-size: 12px;
+}
+.header span a{
+	color: white;
+}
+.main{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?cs=srgb&dl=architecture-auto-automobiles-210182.jpg&fm=jpg);
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.main .navbar .navbar-header .navbar-logo img.img-responsive{
+	max-width: 90px;
+	max-height: 90px;
+	object-fit: cover;
+	margin-right: 1rem;
+}
+.main .navbar .navbar-items{
+	display: none;
+}
+.main .container .content{
+	display: none;
+}
+.main .container{
+	top: 70%;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.main .container inputForm.customForm{
+	background-color: rgba(28,28,29, 1.0);
+}
+.main .container inputForm.customForm ul li.listItems{
+	width: 50%;
+	display: inline-block;
+}
+.main .container inputForm.customForm ul li.active a{
+	color: white!important;
+} 
+.main .container inputForm.customForm ul li.listItems a{
+	color: #aaa;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.main .container inputForm.customForm input[type="text"]{
+	text-transform: uppercase;
+}
+.sideMenu{
+	height:100%;
+	width:0px;
+	position:fixed;
+	z-index:600;
+	top:0px;
+	right:0px;
+	background-color:white;
+	overflow-x:hidden;
+	padding-top:45px;
+	transition:0.4s ease;
+	display: block;
+}  
+.sideMenu a{
+	/*padding:20px 10px 10px 30px;*/
+	font-size:15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+	/*transition:0.3s;*/
+}  
+.sideMenu .sideMenuClose{
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:36px;
+}
+.sideNavigation{
+	display: block;
+}
+.sideNavigation a i{
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+}
+.sideMenu .dropdown{
+	position: relative;
+}
+.sideMenu .dropdown::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 150px;
+}
+.dropdown-menu{
+	border:none;
+	width: 100%;
+}
+.dropdown-menu .dropdown-item{
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+}
+.dropdown-menu hr{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.main .navbar .bikes{
+	margin-right: auto;
+	width: auto;
+}
+.main .navbar .bikes .bikeRider{
+	position: relative;
+	color: white;
+	font-size: 12px;
+}
+.main .navbar .bikes .bikeRider::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 5px;
+  	padding-top: 5px;
+}
+/*Statistics Section */
+.statistics{
+	background: linear-gradient(rgba(245, 246, 250,0.4),rgba(245, 246, 250,0.4)),url(https://i.pinimg.com/564x/12/01/eb/1201eb3119aaaaf434198e03b29ca581.jpg);
+}
+.statistics .container{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left:40px;
+}
+.statistics .container .box{
+	display: inline-block;
+	width: 46%;
+	background-color: rgba(220, 221, 225,0.6);
+	z-index: 500; 
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.statistics .container .boxThree h4{
+	position: relative
+}
+.statistics .container .boxThree h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .boxFour h4{
+	position: relative;
+}
+.statistics .container .boxFour h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .box h4{
+	z-index: 100;
+	font-weight: 800;
+	font-size: 30px;
+}
+.statistics .container .box h6{
+	z-index: 100;
+	text-transform: uppercase;
+	font-weight: 650;
+	font-size: 18px; 
+}
+
+/* Features Section */
+.features{
+	background-color: #FFFFFF;
+}
+.features .container{
+	padding-top: 20px;
+	padding-bottom: 60px;
+	padding-left: 35px;
+}
+.features h4.speciality{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 3.5rem;
+}
+.features .container .feature{
+	margin-bottom: 10px;
+	width: 46%;
+	margin-right: 10px;
+}
+.features .container .feature h5{
+	position: relative;
+	font-weight: 900;
+	margin-bottom: 20px;
+	padding-left: 50px;
+	font-size: 12px;
+}
+.features .container .feature h5::before{
+	position: absolute;
+	counter-increment: my-sec-counter;
+	content: counter(my-sec-counter);
+	transform: translateX(-40px);
+	font-size: 40px;
+	line-height: 30px;
+	font-weight: 800;
+	color: rgba(251, 197, 49,1.0);
+}
+.features .container .feature p{
+	color: #aaa;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1rem;
+}
+
+/* Start of Fleet Section */
+.fleet{
+	background-color: #EEEEEE;
+}
+.fleet .container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.fleet h4.heading{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	padding-top: 30px;
+}
+.fleet .container .pictures{
+	background-color: white;
+	margin-bottom: 2.5rem;
+	box-shadow: 0px 0px 10px 0px black;
+	/*display: flex-wrap;*/
+	/*justify-content: space-between;*/
+}
+.fleet .container .pictures .picture h6.name{
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 700;
+	font-size: 25px;
+}
+.fleet .container .pictures .picture{
+	/*position: absolute;*/
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.fleet .container .pictures .picture a img{
+	/*transform: translateX(50%);*/
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	margin-top: 0px;
+}
+.fleet .container .pictures .pictureTwelve a.show{
+	position: relative;
+	color: #aaa;
+	left: 35%;
+	font-weight: 700;
+	font-size: 20px;
+	padding-top: 30px;
+	font-weight: 700;
+}
+.fleet .container .pictures .pictureTwelve a.show::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;
+}
+.fleet .container .companies .company{
+	display: inline-block;
+	width: 48%;
+	padding-left: 0px;
+}
+/* Start of Footer Section */
+.footer{
+	padding-top: 40px;
+	padding-bottom: 1px;
+	background-color: #363636;
+}
+.footer .container .row .col-xl-4{
+	margin-bottom: 20px;
+}
+.footer .container .col-xl-4 a.brand_image .img-responsive{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.footer .container .row .col-xl-4 h2.company{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+.footer .container .row .col-xl-4 ul{
+	list-style: none;
+}
+.footer .container .row .col-xl-4 ul li{
+	display: block;
+}
+.footer .container .row .col-xl-4 ul li a{
+	font-size: 12px;
+	color: white;
+}
+.footer .container .footer-copyright{
+	margin-top: 20px;
+}
+.footer .container .footer-copyright p{
+	text-align: center;
+	color: white;
+	position: relative;
+	font-size: 9px;
+	font-weight: 600;
+}
+.footer .container .footer-copyright p::before{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f1f9";
+	font-weight: 400;
+	font-style: normal;
+  	font-variant: normal;
+  	left: 2%;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 399px){
+/* Start of Header Section */
+.header{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	opacity: 0.7;
+}
+.header span{
+	color: white;
+	font-size: 12px;
+}
+.header span a{
+	color: white;
+}
+.main{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?cs=srgb&dl=architecture-auto-automobiles-210182.jpg&fm=jpg);
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.main .navbar .navbar-header .navbar-logo img.img-responsive{
+	max-width: 90px;
+	max-height: 90px;
+	object-fit: cover;
+	margin-right: 1rem;
+}
+.main .navbar .navbar-items{
+	display: none;
+}
+.main .container .content{
+	display: none;
+}
+.main .container{
+	top: 70%;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.main .container inputForm.customForm{
+	background-color: rgba(28,28,29, 1.0);
+}
+.main .container inputForm.customForm ul li.listItems{
+	width: 50%;
+	display: inline-block;
+}
+.main .container inputForm.customForm ul li.active a{
+	color: white!important;
+} 
+.main .container inputForm.customForm ul li.listItems a{
+	color: #aaa;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.main .container inputForm.customForm input[type="text"]{
+	text-transform: uppercase;
+}
+.sideMenu{
+	height:100%;
+	width:0px;
+	position:fixed;
+	z-index:600;
+	top:0px;
+	right:0px;
+	background-color:white;
+	overflow-x:hidden;
+	padding-top:45px;
+	transition:0.4s ease;
+	display: block;
+}  
+.sideMenu a{
+	/*padding:20px 10px 10px 30px;*/
+	font-size:15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+	/*transition:0.3s;*/
+}  
+.sideMenu .sideMenuClose{
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:36px;
+}
+.sideNavigation{
+	display: block;
+}
+.sideNavigation a i{
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+}
+.sideMenu .dropdown{
+	position: relative;
+}
+.sideMenu .dropdown::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 150px;
+}
+.dropdown-menu{
+	border:none;
+	width: 100%;
+}
+.dropdown-menu .dropdown-item{
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+}
+.dropdown-menu hr{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.main .navbar .bikes{
+	margin-right: auto;
+	width: auto;
+}
+.main .navbar .bikes .bikeRider{
+	position: relative;
+	color: white;
+	font-size: 12px;
+}
+.main .navbar .bikes .bikeRider::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 5px;
+  	padding-top: 5px;
+}
+/*Statistics Section */
+.statistics{
+	background: linear-gradient(rgba(245, 246, 250,0.4),rgba(245, 246, 250,0.4)),url(https://i.pinimg.com/564x/12/01/eb/1201eb3119aaaaf434198e03b29ca581.jpg);
+}
+.statistics .container{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left:35px;
+}
+.statistics .container .box{
+	display: inline-block;
+	width: 46%;
+	background-color: rgba(220, 221, 225,0.6);
+	z-index: 500; 
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.statistics .container .boxThree h4{
+	position: relative
+}
+.statistics .container .boxThree h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .boxFour h4{
+	position: relative;
+}
+.statistics .container .boxFour h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .box h4{
+	z-index: 100;
+	font-weight: 800;
+	font-size: 30px;
+}
+.statistics .container .box h6{
+	z-index: 100;
+	text-transform: uppercase;
+	font-weight: 650;
+	font-size: 18px; 
+}
+
+/* Features Section */
+.features{
+	background-color: #FFFFFF;
+}
+.features .container{
+	padding-top: 20px;
+	padding-bottom: 60px;
+	padding-left: 35px;
+}
+.features h4.speciality{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 3.5rem;
+}
+.features .container .feature{
+	margin-bottom: 10px;
+	width: 46%;
+	margin-right: 10px;
+}
+.features .container .feature h5{
+	position: relative;
+	font-weight: 900;
+	margin-bottom: 10px;
+	padding-left: 50px;
+	font-size: 10px;
+}
+.features .container .feature h5::before{
+	position: absolute;
+	counter-increment: my-sec-counter;
+	content: counter(my-sec-counter);
+	transform: translateX(-40px);
+	font-size: 30px;
+	line-height: 25px;
+	font-weight: 800;
+	color: rgba(251, 197, 49,1.0);
+}
+.features .container .feature p{
+	color: #aaa;
+	font-size: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 1rem;
+}
+
+/* Start of Fleet Section */
+.fleet{
+	background-color: #EEEEEE;
+}
+.fleet .container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.fleet h4.heading{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	padding-top: 30px;
+}
+.fleet .container .pictures{
+	background-color: white;
+	margin-bottom: 2.5rem;
+	box-shadow: 0px 0px 10px 0px black;
+	/*display: flex-wrap;*/
+	/*justify-content: space-between;*/
+}
+.fleet .container .pictures .picture h6.name{
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 700;
+	font-size: 25px;
+}
+.fleet .container .pictures .picture{
+	/*position: absolute;*/
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.fleet .container .pictures .picture a img{
+	/*transform: translateX(50%);*/
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	margin-top: 0px;
+}
+.fleet .container .pictures .pictureTwelve a.show{
+	position: relative;
+	color: #aaa;
+	left: 35%;
+	font-weight: 700;
+	font-size: 20px;
+	padding-top: 30px;
+	font-weight: 700;
+}
+.fleet .container .pictures .pictureTwelve a.show::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;
+}
+.fleet .container .companies .company{
+	display: inline-block;
+	width: 48%;
+	padding-left: 0px;
+}
+/* Start of Footer Section */
+.footer{
+	padding-top: 40px;
+	padding-bottom: 1px;
+	background-color: #363636;
+}
+.footer .container .row .col-xl-4{
+	margin-bottom: 20px;
+}
+.footer .container .col-xl-4 a.brand_image .img-responsive{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.footer .container .row .col-xl-4 h2.company{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+.footer .container .row .col-xl-4 ul{
+	list-style: none;
+}
+.footer .container .row .col-xl-4 ul li{
+	display: block;
+}
+.footer .container .row .col-xl-4 ul li a{
+	font-size: 12px;
+	color: white;
+}
+.footer .container .footer-copyright{
+	margin-top: 20px;
+}
+.footer .container .footer-copyright p{
+	text-align: center;
+	color: white;
+	position: relative;
+	font-size: 8px;
+}
+.footer .container .footer-copyright p::before{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f1f9";
+	font-weight: 400;
+	font-style: normal;
+  	font-variant: normal;
+  	left: 5%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.main{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?cs=srgb&dl=architecture-auto-automobiles-210182.jpg&fm=jpg);
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.main .navbar{
+	position: absolute;
+	top: 0px;
+	background-color: rgba(28,28,29, 0.8);
+	width: 100%;
+}
+.main .navbar .navbar-header .navbar-logo img.img-responsive{
+	max-width: 150px;
+	max-height: 150px;
+	object-fit: cover;
+	margin-right: 4rem;
+}
+.main .navbar .navbar-items{
+	display: none;
+}
+.main .container .content{
+	display: none;
+}
+.main .container{
+	top: 75%;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.main .container inputForm.customForm{
+	background-color: rgba(28,28,29, 1.0);
+}
+.main .container inputForm.customForm ul li.listItems{
+	width: 50%;
+	display: inline-block;
+}
+.main .container inputForm.customForm ul li.active a{
+	color: white!important;
+} 
+.main .container inputForm.customForm ul li.listItems a{
+	color: #aaa;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+}
+.main .container inputForm.customForm input[type="text"]{
+	text-transform: uppercase;
+}
+.sideMenu{
+	height:100%;
+	width:0px;
+	position:fixed;
+	z-index:600;
+	top:0px;
+	right:0px;
+	background-color:white;
+	overflow-x:hidden;
+	padding-top:45px;
+	transition:0.4s ease;
+	display: block;
+}  
+.sideMenu a{
+	/*padding:20px 10px 10px 30px;*/
+	font-size:15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+	/*transition:0.3s;*/
+}  
+.sideMenu .sideMenuClose{
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:36px;
+}
+.sideNavigation{
+	display: block;
+}
+.sideNavigation a i{
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+}
+.sideMenu .dropdown{
+	position: relative;
+}
+.sideMenu .dropdown::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 400px;
+}
+.dropdown-menu{
+	border:none;
+	width: 100%;
+}
+.dropdown-menu .dropdown-item{
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+}
+.dropdown-menu hr{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* Start of Statistics Section */
+.statistics{
+	background: linear-gradient(rgba(245, 246, 250,0.4),rgba(245, 246, 250,0.4)),url(https://i.pinimg.com/564x/12/01/eb/1201eb3119aaaaf434198e03b29ca581.jpg);
+}
+.statistics .container{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+}
+.statistics .container .box{
+	display: inline-block;
+	width: 22%;
+	background-color: rgba(220, 221, 225,0.8);
+	margin-right: 7px;
+	z-index: 500;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.statistics .container .boxThree h4{
+	position: relative
+}
+.statistics .container .boxThree h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .boxFour h4{
+	position: relative;
+}
+.statistics .container .boxFour h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .box h4{
+	z-index: 100;
+	font-weight: 800;
+	font-size: 25px;
+}
+.statistics .container .box h6{
+	z-index: 100;
+	text-transform: uppercase;
+	font-weight: 650;
+	font-size: 18px; 
+}
+
+/* Start of Features Section */
+.features{
+	background-color: #FFFFFF;
+}
+.features .container{
+	padding-top: 20px;
+	padding-bottom: 60px;
+	width: 100%;
+	padding-left: 30px;
+}
+.features h4.speciality{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 3.5rem;
+}
+.features .container .feature{
+	margin-bottom: 30px;
+	width: 31.33%;
+	margin-right: 10px;
+}
+.features .container .feature h5{
+	position: relative;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-left: 40px;
+	font-size: 15px;
+}
+.features .container .feature h5::before{
+	position: absolute;
+	counter-increment: my-sec-counter;
+	content: counter(my-sec-counter);
+	transform: translateX(-35px);
+	font-size: 35px;
+	line-height: 30px;
+	font-weight: 800;
+	color: rgba(251, 197, 49,1.0);
+}
+.features .container .feature p{
+	color: #aaa;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-right: 15px;
+	line-height: 1.2rem;
+}
+
+/* Start of Fleet Section */
+.fleet{
+	background-color: #EEEEEE;
+}
+.fleet .container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.fleet h4.heading{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	padding-top: 30px;
+}
+.fleet .container .pictures{
+	background-color: white;
+	margin-bottom: 2.5rem;
+	box-shadow: 0px 0px 10px 0px black;
+	/*display: flex-wrap;*/
+	/*justify-content: space-between;*/
+}
+.fleet .container .pictures .picture h6.name{
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.fleet .container .pictures .picture{
+	/*position: absolute;*/
+	width: 24%;
+	display: inline-block;
+}
+.fleet .container .pictures .pictureTwelve a.show{
+	position: relative;
+	color: #aaa;
+	left: 40%;
+	font-weight: 700;
+}
+.fleet .container .pictures .pictureTwelve a.show::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;
+}
+.fleet .container .companies .company{
+	display: inline-block;
+	width: 24%;
+	padding-left: 30px;
+}
+
+/* Start of Footer Section */
+.footer{
+	padding-top: 40px;
+	padding-bottom: 1px;
+	background-color: #363636;
+}
+.footer .container .row .col-xl-4{
+	margin-bottom: 20px;
+}
+.footer .container .col-xl-4 a.brand_image .img-responsive{
+	max-width: 200px;
+	max-height: 200px;
+	object-fit: cover;
+}
+.footer .container .row .col-xl-4 h2.company{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+.footer .container .row .col-xl-4 ul{
+	list-style: none;
+}
+.footer .container .row .col-xl-4 ul li{
+	display: block;
+}
+.footer .container .row .col-xl-4 ul li a{
+	font-size: 12px;
+	color: white;
+}
+.footer .container .footer-copyright{
+	margin-top: 20px;
+}
+.footer .container .footer-copyright p{
+	text-align: center;
+	color: white;
+	position: relative;
+}
+.footer .container .footer-copyright p::before{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f1f9";
+	font-weight: 400;
+	font-style: normal;
+  	font-variant: normal;
+  	left: 16%;
+}	
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1366px){
+.main{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?cs=srgb&dl=architecture-auto-automobiles-210182.jpg&fm=jpg);
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.main .navbar{
+	position: absolute;
+	top: 0px;
+	background-color: rgba(28,28,29, 0.8);
+	width: 100%;
+}
+.main .navbar .navbar-header .navbar-logo img.img-responsive{
+	max-width: 120px;
+	max-height: 120px;
+	object-fit: cover;
+	margin-right: 2rem;
+}
+.main .navbar .navbar-items{
+	display: none;
+}
+.main .container{
+	top: 60%;
+	position: relative;
+}
+.main .container form.form-row .col .form-group input[type="text"]:focus{
+	outline:none;
+	z-index: 900!important;
+}
+.main .container inputForm.customForm{
+	display: none;
+}
+.sideMenu{
+	height:100%;
+	width:0px;
+	position:fixed;
+	z-index:600;
+	top:0px;
+	right:0px;
+	background-color:white;
+	overflow-x:hidden;
+	padding-top:45px;
+	transition:0.4s ease;
+	display: block;
+}  
+.sideMenu a{
+	/*padding:20px 10px 10px 30px;*/
+	font-size:15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+	/*transition:0.3s;*/
+}  
+.sideMenu .sideMenuClose{
+	position:absolute;
+	top:0;
+	right:22px;
+	font-size:36px;
+}
+.sideNavigation{
+	display: block;
+}
+.sideNavigation a i{
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+}
+.sideMenu .dropdown{
+	position: relative;
+}
+.sideMenu .dropdown::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 550px;
+}
+.dropdown-menu{
+	border:none;
+	width: 100%;
+}
+.dropdown-menu .dropdown-item{
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+}
+.dropdown-menu hr{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* Start of Statistics Section */
+.statistics{
+	background: linear-gradient(rgba(245, 246, 250,0.4),rgba(245, 246, 250,0.4)),url(https://i.pinimg.com/564x/12/01/eb/1201eb3119aaaaf434198e03b29ca581.jpg);
+}
+.statistics .container{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+}
+.statistics .container .box{
+	display: inline-block;
+	width: 22%;
+	background-color: rgba(220, 221, 225,0.8);
+	margin-right: 7px;
+	z-index: 500;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.statistics .container .boxThree h4{
+	position: relative
+}
+.statistics .container .boxThree h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .boxFour h4{
+	position: relative;
+}
+.statistics .container .boxFour h4::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	content: '\f005';
+  	padding-left: 10px;
+  	font-size: 16px;
+  	padding-top: 5px;
+}
+.statistics .container .box h4{
+	z-index: 0;
+	font-weight: 800;
+	font-size: 25px;
+}
+.statistics .container .box h6{
+	z-index: 100;
+	text-transform: uppercase;
+	font-weight: 650;
+	font-size: 18px; 
+}
+
+/* Start of Features Section */
+.features{
+	background-color: #FFFFFF;
+}
+.features .container{
+	padding-top: 20px;
+	padding-bottom: 60px;
+	width: 100%;
+	padding-left: 30px;
+}
+.features h4.speciality{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 3.5rem;
+}
+.features .container .feature{
+	margin-bottom: 30px;
+	width: 31.33%;
+	margin-right: 10px;
+}
+.features .container .feature h5{
+	position: relative;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-left: 40px;
+	font-size: 15px;
+}
+.features .container .feature h5::before{
+	position: absolute;
+	counter-increment: my-sec-counter;
+	content: counter(my-sec-counter);
+	transform: translateX(-35px);
+	font-size: 35px;
+	line-height: 30px;
+	font-weight: 800;
+	color: rgba(251, 197, 49,1.0);
+}
+.features .container .feature p{
+	color: #aaa;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-right: 15px;
+	line-height: 1.2rem;
+}
+
+/* Start of Fleet Section */
+.fleet{
+	background-color: #EEEEEE;
+}
+.fleet .container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.fleet h4.heading{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	padding-top: 30px;
+}
+.fleet .container .pictures{
+	background-color: white;
+	margin-bottom: 2.5rem;
+	box-shadow: 0px 0px 10px 0px black;
+	/*display: flex-wrap;*/
+	/*justify-content: space-between;*/
+}
+.fleet .container .pictures .picture h6.name{
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 600;
+	font-size: 14px;
+}
+.fleet .container .pictures .picture{
+	/*position: absolute;*/
+	width: 24%;
+	display: inline-block;
+}
+.fleet .container .pictures .pictureTwelve a.show{
+	position: relative;
+	color: #aaa;
+	left: 40%;
+	font-weight: 700;
+}
+.fleet .container .pictures .pictureTwelve a.show::after{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	font-weight: 900;
+	font-style: normal;
+  	font-variant: normal;
+  	padding-left: 3px;
+}
+.fleet .container .companies .company{
+	display: inline-block;
+	width: 24%;
+	padding-left: 30px;
+}
+
+/* Start of Footer Section */
+.footer{
+	padding-top: 40px;
+	padding-bottom: 1px;
+	background-color: #363636;
+}
+.footer .container .row .col-xl-4{
+	margin-bottom: 20px;
+}
+.footer .container .col-xl-4 a.brand_image .img-responsive{
+	max-width: 200px;
+	max-height: 200px;
+	object-fit: cover;
+}
+.footer .container .row .col-xl-4 h2.company{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0px;
+}
+.footer .container .row .col-xl-4 ul{
+	list-style: none;
+}
+.footer .container .row .col-xl-4 ul li{
+	display: block;
+}
+.footer .container .row .col-xl-4 ul li a{
+	font-size: 12px;
+	color: white;
+}
+.footer .container .footer-copyright{
+	margin-top: 20px;
+}
+.footer .container .footer-copyright p{
+	text-align: center;
+	color: white;
+	position: relative;
+}
+.footer .container .footer-copyright p::before{
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f1f9";
+	font-weight: 400;
+	font-style: normal;
+  	font-variant: normal;
+  	left: 29%;
+}	
+}
